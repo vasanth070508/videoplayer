@@ -1,0 +1,325 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Aptos;
+	panose-1:2 11 0 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+.MsoChpDefault
+	{font-size:12.0pt;
+	font-family:"Aptos",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;!DOCTYPE html&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;html lang=&quot;en&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;head&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;meta charset=&quot;UTF-8&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;title&gt;YouTube Lite&lt;/title&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;meta name=&quot;viewport&quot;
+content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;style&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>body {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  margin: 0;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  font-family: Arial, sans-serif;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  background: #0f0f0f;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  color: white;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>header {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  background: #181818;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  padding: 12px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  text-align: center;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  font-size: 20px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  font-weight: bold;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>#playerBox {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  padding: 10px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>video {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  width: 100%;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  max-height: 60vh;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  background: black;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>#title {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  margin-top: 6px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  font-size: 16px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>#grid {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  display: grid;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  grid-template-columns: repeat(auto-fill,
+minmax(160px, 1fr));</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  gap: 10px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  padding: 10px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>.card {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  cursor: pointer;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>.card img {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  width: 100%;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  border-radius: 6px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>.card p {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  font-size: 14px;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  margin: 4px 0;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;/style&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;/head&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;body&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;header&gt;</span><span lang=EN-GB
+style='font-family:"Segoe UI Symbol",sans-serif'>▶</span><span lang=EN-GB>
+YouTube Lite&lt;/header&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;div id=&quot;playerBox&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  &lt;video id=&quot;player&quot; controls
+preload=&quot;metadata&quot;&gt;&lt;/video&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  &lt;div
+id=&quot;title&quot;&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;div id=&quot;grid&quot;&gt;&lt;/div&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;script&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>const videos = [</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    title: &quot;Big Buck Bunny&quot;,</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    video:
+&quot;https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_1MB.mp4&quot;,</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    thumb:
+&quot;https://peach.blender.org/wp-content/uploads/title_anouncement.jpg&quot;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  },</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    title: &quot;Sintel Trailer&quot;,</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    video:
+&quot;https://media.w3.org/2010/05/sintel/trailer.mp4&quot;,</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    thumb:
+&quot;https://i.ytimg.com/vi/eRsGyueVLvQ/maxresdefault.jpg&quot;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  },</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    title: &quot;Tears of Steel&quot;,</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    video:
+&quot;https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4&quot;,</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    thumb:
+&quot;https://i.ytimg.com/vi/R6MlUcmOul8/maxresdefault.jpg&quot;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  }</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>];</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>const player =
+document.getElementById(&quot;player&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>const title =
+document.getElementById(&quot;title&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>const grid =
+document.getElementById(&quot;grid&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>let current = 0;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>function loadGrid() {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  videos.forEach((v, i) =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    const div =
+document.createElement(&quot;div&quot;);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    div.className = &quot;card&quot;;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    div.innerHTML = `</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>      &lt;img
+src=&quot;${v.thumb}&quot;&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>      &lt;p&gt;${v.title}&lt;/p&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    `;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    div.onclick = () =&gt; play(i);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>    grid.appendChild(div);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  });</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>function play(i) {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  current = i;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  player.src = videos[i].video;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  title.textContent = videos[i].title;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  player.play();</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>}</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>player.addEventListener(&quot;ended&quot;,
+() =&gt; {</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  current = (current + 1) % videos.length;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>  play(current);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>});</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>loadGrid();</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>play(0);</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;/script&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;/body&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-GB>&lt;/html&gt;</span></p>
+
+</div>
+
+</body>
+
+</html>
